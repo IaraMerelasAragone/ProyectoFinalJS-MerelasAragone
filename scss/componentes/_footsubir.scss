@@ -1,0 +1,48 @@
+//color
+$color1: white;
+$color2: #333;
+$color3: rgba(0, 0, 0, 0.3);
+$color4: black;
+
+//size
+$size1: 15px;
+$size2: 20px;
+$size3: 100px;
+$size4: 250px;
+
+/* footer */
+footer{
+    background-color: $color2;
+    color: $color1;
+    font-size: $size1;
+    padding: $size1;
+    text-align: center;
+
+    a{
+        color: $color1;
+        text-shadow: 0 0 2px $color1;
+        font-size: $size2 + 5;
+        letter-spacing: $size1;
+        text-decoration: none;
+
+        &:hover{
+            color: $color4;
+        }
+    }
+}
+
+/* subir */
+.subir{
+    background-color: $color2;
+    color: $color1;
+    box-shadow: 0 0 5px 5px $color1;
+    font-size: $size2;
+    position: fixed;
+    text-align: center;
+    border-radius: 50%;
+    right: calc($size2*2);
+    bottom: calc($size2*2);
+    height: calc($size2*2);
+    width: calc($size2*2);
+    line-height: calc($size2*2);
+}

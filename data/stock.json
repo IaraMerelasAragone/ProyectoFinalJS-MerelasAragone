@@ -1,0 +1,86 @@
+[
+    {
+    "id": 1,
+    "nombre": "Levadizo Zed",
+    "precio": 400000,
+    "imagen": "../assets/levadizozed.jpg",
+    "cantidad_stock": 50
+    },
+    {
+    "id": 2,
+    "nombre": "Corredizo DKC400",
+    "precio": 300000,
+    "imagen": "../assets/bull.5.jpg",
+    "cantidad_stock": 30
+    },
+    {
+    "id": 3,
+    "nombre": "Batiene BILL30",
+    "precio": 250000,
+    "imagen": "../assets/bill.30.jpg",
+    "cantidad_stock": 25
+    },
+    {
+    "id": 4,
+    "nombre": "BOB 30",
+    "precio": 200000,
+    "imagen": "../assets/bob.30.jpg",
+    "cantidad_stock": 40
+    },
+    {
+    "id": 5,
+    "nombre": "BULL 15M-20M",
+    "precio": 350000,
+    "imagen": "../assets/bull.20m-2.jpg",
+    "cantidad_stock": 15
+    },
+    {
+    "id": 6,
+    "nombre": "BISON 25T",
+    "precio": 450000,
+    "imagen": "../assets/bison.25t.jpg",
+    "cantidad_stock": 10
+    },
+    {
+    "id": 7,
+    "nombre": "Control acceso",
+    "precio": 60000,
+    "imagen": "../assets/controlacceso.jpg",
+    "cantidad_stock": 100
+    },
+    {
+    "id": 8,
+    "nombre": "Cerradura Magnética",
+    "precio": 95000,
+    "imagen": "../assets/cerrmagnet.jpg",
+    "cantidad_stock": 75
+    },
+    {
+    "id": 9,
+    "nombre": "Tubular 50",
+    "precio": 180000,
+    "imagen": "../assets/tub-serie-50.jpg",
+    "cantidad_stock": 60
+    },
+    {
+    "id": 10,
+    "nombre": "Roller black out",
+    "precio": 200000,
+    "imagen": "../assets/tub-serie-40.jpg",
+    "cantidad_stock": 50
+    },
+    {
+    "id": 11,
+    "nombre": "Tokey",
+    "precio": 70000,
+    "imagen": "../assets/tokey.jpg",
+    "cantidad_stock": 120
+    },
+    {
+    "id": 12,
+    "nombre": "DKC400",
+    "precio": 300000,
+    "imagen": "../assets/dkc400.jpg",
+    "cantidad_stock": 30
+    }
+]

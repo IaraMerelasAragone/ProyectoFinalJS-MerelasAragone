@@ -1,0 +1,25 @@
+//color
+$color1: white;
+$color2: #333;
+$color3: rgba(0, 0, 0, 0.3);
+$color4: black;
+
+//size
+$size1: 15px;
+$size2: 20px;
+$size3: 100px;
+$size4: 250px;
+
+/* nav todos */
+.navbar{
+    background-color: $color2;
+    font-size: $size1;
+}
+
+span{
+    text-shadow: 0 0 2px $color1;
+}
+
+.nav-link{
+    color: $color1 !important;
+}

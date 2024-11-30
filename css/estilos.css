@@ -1,0 +1,661 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* nav todos */
+.navbar {
+  background-color: #333;
+  font-size: 15px;
+}
+
+span {
+  text-shadow: 0 0 2px white;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 17px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  padding: 3px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.breadcrumb a {
+  color: #333;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* index */
+.jumbotron {
+  background-image: url(../assets/industria.jpg);
+  color: white;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.bienvenidos {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 4px solid rgba(51, 51, 51, 0.6470588235);
+  padding: 20px;
+}
+.bienvenidos a {
+  margin-top: 15px;
+}
+
+
+/* JS */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background-color: gray;
+  border: 3px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+#productos-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  border: 5px solid rgba(0, 0, 0, 0.455);
+  border-radius: 8px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+#carrito {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+#vaciar-carrito {
+  background-color: gray;
+  margin-bottom: 20px;
+
+}
+
+#vaciar-carrito:hover {
+  background-color: #333;
+}
+/* JS */
+
+
+.base-inicio {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  padding: 58px;
+  text-align: center;
+}
+
+.envio h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.envio p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 180px);
+  padding: 40px;
+  grid-gap: 15px;
+}
+
+.item {
+  border: 4px solid #333;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+  background-position: center;
+  background-size: cover;
+}
+
+.item1 {
+  background-image: url(../assets/c106.jpg);
+}
+
+.item2 {
+  background-image: url(../assets/bison.25t.jpg);
+}
+
+.item3 {
+  background-image: url(../assets/bob.30.jpg);
+}
+
+.item4 {
+  background-image: url(../assets/bs346.jpg);
+}
+
+.item5 {
+  background-image: url(../assets/bull.20m-2.jpg);
+}
+
+.item6 {
+  background-image: url(../assets/batcorr.jpg);
+}
+
+.item7 {
+  background-image: url(../assets/cerrmagnet.jpg);
+}
+
+.item8 {
+  background-image: url(../assets/digi209.jpg);
+}
+
+.info-inicio {
+  margin-top: 20px;
+}
+.info-inicio h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.info-inicio p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.solucion {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.solucion h4 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.solucion .row {
+  justify-content: center;
+}
+
+.respons {
+  margin-top: 65px;
+}
+.respons h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.respons p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+/* nosotros */
+.base-nos {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  padding: 20px;
+}
+.base-nos h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.conocernos {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.conocernos h2 {
+  font-size: 27px;
+}
+.conocernos h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.conocernos a {
+  box-shadow: 0 0 10px white;
+  font-size: 15px;
+}
+
+.nleft {
+  background-image: url(../assets/frentecontroll.jpg);
+  border: 4px solid #333;
+  box-shadow: 0 0 15px white;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+
+.objetivos {
+  font-size: 24px;
+  margin-left: 17px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.featurenos {
+  padding: 20px;
+  text-align: center;
+}
+.featurenos i {
+  color: white;
+  text-shadow: 0 0 10px #333;
+  font-size: 20px;
+  margin: 15px 15px;
+}
+.featurenos h4 {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.conocernos1 {
+  margin: 20px;
+  padding: 15px;
+}
+.conocernos1 h4 {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.nmleft, .nmright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nmright iframe {
+  width: 100%;
+  height: 315px;
+  border: 0;
+  box-shadow: 0px 5px 10px white;
+}
+
+.info-nosotros {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.info-nosotros i {
+  color: white;
+  text-shadow: 0 0 10px #333;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.info-nosotros h5 {
+  font-size: 20px;
+}
+.info-nosotros p {
+  font-size: 18px;
+}
+
+/* servicios */
+.base-serv {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  padding: 30px;
+}
+.base-serv h1 {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.caract {
+  color: #333;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+.caract h2 {
+  font-size: 23px;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+.caract p {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.ray {
+  color: white;
+  text-shadow: 0 0 10px #333;
+  font-size: 20px;
+  margin: 15px 15px;
+}
+
+.feature {
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 15px;
+}
+
+article {
+  border: 2px solid white;
+  box-shadow: 0 0 10px #333;
+  padding: 60px;
+}
+article h3 {
+  text-shadow: 0 0 10px whitesmoke;
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+article i {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+}
+article p {
+  font-size: 18px;
+  margin: 7px 7px 7px 7px;
+}
+
+.art1 {
+  background-color: #7f7e82;
+}
+
+.art2 {
+  background-color: #8c8b8e;
+}
+
+.art3 {
+  background-color: #98979b;
+}
+
+.art4 {
+  background-color: #8e8e91;
+}
+
+.art5 {
+  background-color: #9b9b9e;
+}
+
+.art6 {
+  background-color: #a8a8aa;
+}
+
+.novedades {
+  margin-top: 40px;
+  padding: 15px;
+  text-align: center;
+}
+.novedades h3 {
+  font-size: 27px;
+  margin-top: 20px;
+}
+.novedades i {
+  color: white;
+  text-shadow: 0 0 10px #333;
+  font-size: 33.3333333333px;
+  margin: 20px 20px;
+}
+
+.garantia {
+  padding: 30px;
+}
+.garantia p {
+  font-size: 17px;
+}
+
+.web {
+  padding: 20px;
+}
+.web p {
+  font-size: 17px;
+}
+
+/* productos */
+.base-prod {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  padding: 20px;
+}
+.base-prod h1 {
+  font-size: 29px;
+  margin-bottom: 15px;
+}
+.base-prod h2 {
+  text-shadow: 0 0 30px white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  animation-name: desliza;
+  animation-duration: 30s;
+}
+
+@keyframes desliza {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(40%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 17px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.config {
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.config h3 {
+  font-size: 23px;
+  margin-top: 20px;
+}
+.config h4 {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.config i {
+  color: white;
+  text-shadow: 0 0 10px #333;
+  font-size: 33.3333333333px;
+  margin: 20px 20px;
+}
+
+/* contacto */
+.base-cont {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #333;
+  padding: 30px;
+}
+.base-cont h1 {
+  font-size: 32px;
+  margin-top: 11px;
+  margin-bottom: 41.6666666667px;
+  text-align: center;
+}
+.base-cont h2 {
+  font-size: 21px;
+  margin-top: 11px;
+}
+
+.requeridos {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 11px;
+  margin-bottom: 20px;
+}
+
+.soporte h4 {
+  font-size: 23px;
+  margin-top: 50px;
+  text-align: center;
+}
+.soporte h5 {
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mapa {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  overflow: auto;
+}
+.mapa i {
+  color: white;
+  text-shadow: 0 0 5px #333;
+  font-size: 33.3333333333px;
+  margin: 15px 15px;
+}
+.mapa h4 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  text-align: center;
+}
+footer a {
+  color: white;
+  text-shadow: 0 0 2px white;
+  font-size: 25px;
+  letter-spacing: 15px;
+  text-decoration: none;
+}
+footer a:hover {
+  color: black;
+}
+
+/* subir */
+.subir {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 0 5px 5px white;
+  font-size: 20px;
+  position: fixed;
+  text-align: center;
+  border-radius: 50%;
+  right: 40px;
+  bottom: 40px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+}
+
+/* media queries ini */
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 180px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1330px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .item4 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
+  .item5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .item6 {
+    grid-column: 3/4;
+    grid-row: 3/5;
+  }
+  .item7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  .item8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media only screen and (min-width: 1330px) {
+  .galeria {
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(2, 300px);
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

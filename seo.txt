@@ -1,0 +1,25 @@
+1- incluí keywords adaptados a mi web.
+
+2- incluí títulos únicos para cada página.
+
+3- revise la jerarquía de encabezados.
+
+4- revise el contenido textual: bloques lógicos, información precisa, redacción clara.
+
+5- organización jerárquica para la navegación a partir de la página principal.
+
+6- verificada la estructura de directorio para que sea simple.
+
+7- diseño responsive
+
+8- incluí el texto alt en todas las imágenes.
+
+9- mayor cantidad de enlaces internos relativos que externos absolutos.
+
+10- optimización del código fuente, ordendado, legible y escalable.
+
+11- uso de comentarios.
+
+12- revise coherencia en clases y IDs.
+
+13- compresión de imagenes a un 21% menos.

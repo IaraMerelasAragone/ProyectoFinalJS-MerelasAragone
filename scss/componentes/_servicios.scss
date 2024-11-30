@@ -1,0 +1,127 @@
+//color
+$color1: white;
+$color2: #333;
+$color3: rgba(0, 0, 0, 0.3);
+$color4: black;
+$color5: rgba(0, 0, 0, 0.4);
+
+//@for
+$color5: rgb(114, 113, 117);
+$color6: rgb(91, 91, 94);
+
+//size
+$size1: 15px;
+$size2: 20px;
+$size3: 100px;
+$size4: 250px;
+
+/* servicios */
+.base-serv{
+    background-color: $color3;
+    color: $color2;
+    padding: $size2 + 10;
+    h1{
+        font-size: $size2 + 10;
+        margin-top: $size1 - 5;
+        margin-bottom: $size1;
+    }
+}
+
+.caract{
+    color: $color2;
+    padding: $size2;
+    margin-bottom: $size2 + 2;
+
+    h2{
+        font-size: $size2 + 3;
+        margin-top: $size1 - 8;
+        margin-bottom: $size1;
+    }
+
+    p{
+        font-size: $size1 + 3;
+        margin-top: $size1 - 5;
+        margin-bottom: $size2;
+    }
+}
+
+.ray{
+    color: $color1;
+    text-shadow: 0 0 10px $color2;
+    font-size: $size2;
+    margin: $size1 $size1;
+}
+
+.feature{
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: $size1;
+}
+
+article{
+    border: 2px solid $color1;
+    box-shadow: 0 0 10px $color2;
+    padding: calc($size2*3);
+
+    h3{
+        text-shadow: 0 0 10px whitesmoke;
+        font-size: $size2 + 2;
+        margin-top: $size1;
+        margin-bottom: $size2;
+    }
+
+    i{
+        color: $color3;
+        font-size: $size1 + 3;
+    }
+
+    p{
+        font-size: $size1 + 3;
+        margin: 7px 7px 7px 7px;
+    }
+}
+
+@for $i from 1 through 3 {
+    .art#{$i}{
+        background-color: lighten($color5, $i * 5%);
+    }
+}
+
+@for $i from 4 through 6 {
+    .art#{$i}{
+        background-color: lighten($color6, $i * 5%);
+    }
+}
+
+.novedades{
+    margin-top: calc($size2*2);
+    padding: $size1;
+    text-align: center;
+
+    h3{
+        font-size: $size2 + 7;
+        margin-top: $size2;
+    }
+
+    i{
+        color: $color1;
+        text-shadow: 0 0 10px $color2;
+        font-size: calc($size3/3);
+        margin: $size2 $size2;
+    }
+}
+
+.garantia{
+    padding: $size2 + 10;
+    p{
+        font-size: $size1 + 2;
+    }
+}
+
+.web{
+    padding: $size2;
+
+    p{
+    font-size: $size1 + 2;
+    }
+}

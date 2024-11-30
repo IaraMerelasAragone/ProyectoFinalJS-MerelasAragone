@@ -1,0 +1,29 @@
+//color
+$color1: white;
+$color2: #333;
+$color3: rgba(0, 0, 0, 0.3);
+$color4: black;
+
+//size
+$size1: 15px;
+$size2: 20px;
+$size3: 100px;
+$size4: 250px;
+
+.breadcrumb{
+    background-color: $color3;
+    font-size: $size1 + 2;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+
+    a{
+        color: $color2;
+        font-size: $size1;
+        text-decoration: none;
+    }
+}

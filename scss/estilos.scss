@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+//partials
+@import "../scss/componentes/navtodos";
+@import "../scss/componentes/breadcrumb";
+@import "../scss/componentes/index";
+@import "../scss/componentes/nosotros";
+@import "../scss/componentes/servicios";
+@import "../scss/componentes/productos";
+@import "../scss/componentes/contacto";
+@import "../scss/componentes/footsubir";
+@import "../scss/componentes/mediaque";
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+//color
+$color1: white;
+$color2: #333;
+$color3: rgba(0, 0, 0, 0.3);
+$color4: black;
+$color5: rgba(0, 0, 0, 0.4);
+
+//@for
+$color5: gray;
+$color6: rgb(106, 102, 102);
+
+//size
+$size1: 15px;
+$size2: 20px;
+$size3: 100px;
+$size4: 250px;
